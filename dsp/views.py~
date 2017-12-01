@@ -4,6 +4,6 @@ from .models import Post
 
 def dsp_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'dsp/dsp_list.html', {'post': dsp})
+    return render(request, 'dsp/dsp_list.html', {'dsp': dsp})
 
 # Create your views here.
