@@ -1,11 +1,16 @@
-    <html>
+{% load staticfiles %}  
+  <html>
         <head>
-            <title>Control DSP1</title>
+    <title>Django Girls blog</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         </head>
         <body>
             <div>
                 <h1><a href="">Control DSP1</a></h1>
             </div>
+
             {% for post in posts %}
                 <div>
                     <p>published: {{ post.published_date }}</p>
@@ -13,16 +18,6 @@
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
-            <div>
-                <p>publicado: 01.12.2017, 10:56</p>
-                <h2><a href="">Bienvenido a DSP1</a></h2>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            </div>
 
-            <div>
-                <p>publicado: 01.12.2017, 10:56</p>
-                <h2><a href="">Control de consumo</a></h2>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-            </div>
         </body>
     </html>
