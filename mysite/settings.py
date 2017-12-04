@@ -25,8 +25,8 @@ SECRET_KEY = '2st^h)vh!(dbnu_c6o&6i88-i#u8wg=t1@cs+@g=t3y6)1vpds'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['erch07.pythonanywhere.com']
-#ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = ['erch07.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'dsp',
+    'blog',
 ]
 
 MIDDLEWARE = [
